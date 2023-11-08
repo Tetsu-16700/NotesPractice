@@ -7,7 +7,40 @@
     <link rel="stylesheet" href="Notes.css" />
   </head>
   <body>
+    <div class="container"> 
+        <h1 id="tittle-container">Welcome to Notes</h1>
+        <form id="form-container">
+            <input name="text" id="text" placeholder="Things to remember..."></input>
+            <button class="create-List" type="submit">Create</button>
+         </form>
+         
+      <div class="li-container" id="li-container">
+        <div class="text 1">
+          <p>This is my first note.</p>
+          <button class="delete-List 1" type="button">Delete</button>
+        </div>
+      
+        <div class="text 2">       
+          <p> This is a bigger note with multipe lines.</p>
+          <button class="delete-List 2" type="button">Delete</button>
+        </div>      
+    
+        <div class="text 3">
+          <p>This is another note.</p>
+          <button class="delete-List 3" type="button">Delete</button>
+        </div>
+    
+        <div class="text 4">  
+          <p>One more note.</p>
+          <button class="delete-List 4" type="button">Delete</button> 
 
+        </div>
+
+      </div>
+
+      <p id="log"></p>
+
+    </div>
     <script src="Notes.js"></script>
   </body>
 </html>
