@@ -39,4 +39,18 @@ function createNote(event){
     // // SI EL NUEVO CUADRO FUE CREADO EN BLANCO APARECE:
 
     newP.textContent = text == '' ? 'Default text' : text;
+
+    // // FUNCION DE BOTON DELETE
+
+    const newButton = document.createElement('button');
+    newButton.className = 'delete-List ' + numCards
+    newButton.type = 'button'
+    newButton.textContent = 'Delete'
+
+    // // FUNCION DE NUEVO CUADRO O NOTA
+
+    newDiv.className = 'text ' + numCards
+    newDiv.appendChild(newP);
+    newDiv.appendChild(newButton);
+    mainContainer.appendChild(newDiv);
 }
