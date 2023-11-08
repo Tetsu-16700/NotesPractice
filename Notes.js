@@ -54,3 +54,12 @@ function createNote(event){
     newDiv.appendChild(newButton);
     mainContainer.appendChild(newDiv);
 }
+// FUNCION DE BOTONES CREATE Y DELETE
+
+function deleteNote(event){
+    const classNames = event.target.className.split(' ')
+    if ( classNames[0] === 'delete-List'){
+        const noteToDelete = mainContainer.getElementsByClassName("text "+classNames[1])[0]
+        mainContainer.removeChild(noteToDelete)
+    }
+}
